@@ -1,5 +1,11 @@
 name: Build, Test & DAST Scan
 
+# Grant GitHub permissions so ZAP can annotate or create issues
+permissions:
+  contents: read
+  security-events: write
+  issues: write
+  
 on:
   push:
     branches: [ "main" ]
